@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile  # Optional: Specify if your Dockerfile is named differently
+    image: lisa-web
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
