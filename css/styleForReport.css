@@ -1,0 +1,176 @@
+<style>
+* {font-family: Helvetica Neue, Arial, sans-serif; }
+
+body{
+
+		margin: 0px;
+		padding: 0px;
+		font-weight: 400;
+		font-size: 1.08rem;
+		font-style: normal;
+		background-color: #FAF2E6;
+		background-image: url(data:image/png;base64,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);
+		background-repeat: repeat;
+		background-position: left top;
+		font-family: 'helvetica neue', helvetica, arial, 'lucida grande', sans-serif;
+
+	}
+	#wrapper{		
+		/*background-color:#fff;*/
+		border-radius: 0px;
+		/*border: 1px solid #123456;*/
+		/*box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);	*/
+		margin: 0 auto;
+		margin-top: 20px;
+		padding: 0px;
+		max-width: 950px;
+		min-width: 700px;
+		width: 100%;
+		text-align: center;
+		/*background: #93E0FF;*/
+
+	}
+	#searchBox table {
+		margin: 0 auto;
+	}
+	#header{
+		/*background: #D9D596;*/
+		padding:1px;
+		text-align: center;
+		box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2);
+		background: -webkit-linear-gradient(top, #c9c482, #D9D596);
+		background: -moz-linear-gradient(center top , #c9c482, #D9D596) repeat scroll 0% 0% transparent;
+		
+	}
+	select {
+	   background: #D9D596;
+	   border: 1px solid #ede4b1;
+	   height: 29px;
+	   border-radius: 2px;
+	}
+	select:hover{
+		background: #eae6b2;
+	}
+h1, table { text-align: center;}
+table td {width:50%;}
+.reportTable {border-collapse: collapse;  width:80%; margin: 0 auto 5px; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);}
+
+.reportTable th, .reportTable td { padding: 10px; font-size: 15px; }
+
+.reportTable tr {background: hsl(50, 50%, 80%); }
+
+.reportTable tr, .reportTable td { transition: .1s ease-in; } 
+
+.reportTable tr:first-child {background: hsla(12, 100%, 40%, 0.5); }
+
+.reportTable tr:nth-child(even) { background: #e8dcdc }
+
+.reportTable td:empty {background: #cec4c4 }
+
+.reportTable tr:hover:not(#firstrow), tr:hover td:empty {background: #bcadad; pointer-events: visible;}
+.reportTable tr:hover:not(#firstrow) { transform: scale(1.01); font-weight: 500; box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);}
+
+.result_container{
+	transition: .4s ease-out;
+	width: 800px;
+	padding: 10px 20px 10px 10px;
+	border-radius: 2px;
+	border-top: 5px solid #fff;
+	/*border:1px solid #123456;*/
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+	background: #73D5FB;
+	text-align: center;
+	padding-left: 0px auto;
+	padding-right: 0px auto;
+	margin: 0.75rem auto;
+}
+.result_container:hover{
+	transition: .4s ease-in;
+	padding: 20px 5px 20px 20px;
+	width: 900px;
+
+}
+.graph{
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #123456;
+}
+#btn_submit{
+		box-shadow: none;
+		background-color: #D9D596;		
+		border: 1px solid #ede4b1;
+		color: #000;
+		border-radius: 2px;
+		cursor: default;
+		font-size: 11px;
+		font-weight: bold;
+		text-align: center;
+		white-space: nowrap;
+		/*margin-right: 16px;*/
+		height: 27px;
+		line-height: 27px;
+		min-width: 54px;
+		outline: 0px none;
+		padding: 0px 8px;
+    	height: auto;
+    	padding-left: 15px;
+    	padding-right: 15px;
+	}
+	#btn_submit:hover{
+		background: #eae6b2;
+	}
+	.sub_result{
+		width: 80%;
+		border-radius: 2px;
+		background: #3366CC;
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+		color: white;
+		height: 30px;
+		line-height: 30px;
+	}
+	#dashboard{
+		width: 100%;
+		text-align: left;
+		font-family: 'helvetica neue', helvetica, arial, 'lucida grande', sans-serif;
+		/*border: 1px solid #212;*/
+	}
+	.sub_dashboard{
+		height: 350px;
+		width: 300px;
+		border-radius: 5px;
+		border: 1px solid #ccc;
+		background: #FFFFFF;
+		text-align: left;
+	}
+	.sub_head{
+		background-color: rgb(246, 247, 248);
+		border-top-right-radius: 5px;
+		border-top-left-radius: 5px;
+		border-bottom: 1px solid #ccc;
+		font-size: 16px;
+		font-weight: 500;
+		height: 50px;
+		padding-left: 15px;
+		line-height: 50px;
+		text-align: left;
+
+	}
+	.sub_body{
+		padding: 10px;
+		text-align: left;
+	}
+	.sub_text{
+		color:#ccc; 
+		border-bottom:1px solid #ccc; 
+		padding:5px 5px 10px 5px; 
+		font-size:16px;
+		line-height: 18px;
+	}
+	.sub_number{
+		display:inline; 
+		color:#000; 
+		font-weight:bold; 
+		font-size:18px
+	}
+
+</style>
