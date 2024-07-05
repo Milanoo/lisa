@@ -1,5 +1,3 @@
-Sure, here’s the revised README file:
-
 ---
 
 # LISA Web Application
