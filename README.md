@@ -1,15 +1,22 @@
 ---
+## About
 
-# LISA Web Application
+### Project Description
 
-This is a web application for analyzing and producing comparative reports using the open API available at lisa.mofaga.gov.np. The project is dockerized for easy deployment.
+This project is designed to fetch and analyze data from the LISA (Local Institution Strength Assessment) system provided by the Ministry of Federal Affairs and General Administration of Nepal. The data, accessed through the API `https://lisa.mofaga.gov.np/backend/api/reports/summary?fiscal_year_id={index starting at 1}`, is used to produce comparative reports and visualizations of local government performance across various fiscal years.
 
-## Features
+### Key Features
 
-- Analyze and produce comparative reports.
-- Interactive radar chart for visualizing data.
-- PHP backend with JSON data handling.
-- Dockerized for easy deployment.
+- **Data Fetching**: Automatically fetches data from the LISA API for different fiscal years.
+- **Interactive Visualization**: Provides an interactive radar chart for comparing the performance of different local governments (LGs) based on various categories.
+- **Comparison Table**: Displays a comparison table with detailed scores for each category, highlighting differences between selected LGs.
+- **Responsive Design**: Ensures a user-friendly interface for analyzing and comparing data on different devices.
+
+### Technology Stack
+
+- **Frontend**: HTML, CSS, JavaScript, Chart.js for visualizations.
+- **Backend**: PHP for data processing and API interactions.
+- **Containerization**: Docker for easy deployment and setup.
 
 ## Project Structure
 
