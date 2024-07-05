@@ -3,7 +3,7 @@
 
 ### Project Description
 
-This project is designed to fetch and analyze data from the LISA (Local Institution Strength Assessment) system provided by the Ministry of Federal Affairs and General Administration of Nepal. The data, accessed through the API `https://lisa.mofaga.gov.np/backend/api/reports/summary?fiscal_year_id={index starting at 1}`, is used to produce comparative reports and visualizations of local government performance across various fiscal years.
+This project is built to retrieve and analyze data from the LISA (Local Government Institution Capacity Self Assessment) system, offered by the Ministry of Federal Affairs and General Administration of Nepal. The data, obtained via the API https://lisa.mofaga.gov.np/backend/api/reports/summary?fiscal_year_id={index starting at 1}, is utilized to generate comparative reports and visualizations of local government performance over multiple fiscal years. To reduce API calls and prevent server overload, all API responses are stored as JSON files, enhancing data analysis efficiency and providing a responsive user interface.
 
 ### Key Features
 
