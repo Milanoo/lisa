@@ -16,15 +16,16 @@ This is a web application for analyzing and producing comparative reports using 
 ## Project Structure
 
 ```
-my-php-project/
+LISA/
+├── css/
 ├── data/
 │   ├── LISA_summary_fiscal_year_4.json
 │   └── ...
+├── vendor/
 ├── docker-compose.yml
 ├── Dockerfile
 ├── index.php
-├── script.js
-└── style.css
+└── script.js
 ```
 
 ## Requirements
