@@ -24,7 +24,7 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t milanosth/lisa-web:latest .
-        working-directory: ./LISA
+        working-directory: ./
 
       - name: Push Docker image
         run: docker push milanosth/lisa-web:latest
