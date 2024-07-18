@@ -375,6 +375,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (categoriesChart) {
             categoriesChart.destroy();
         }
+        // Chart.register(ChartDataLabels);
         categoriesChart = new Chart(categoriesChartCtx, {
             type: 'radar',
             data: {
