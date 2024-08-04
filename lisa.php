@@ -300,7 +300,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         highestScoreLGDisplay.textContent = highestScoreLG;
 
-       
+       // Cateogry full score
         const categoryFullScores = {
             1: 9,
             2: 8,
@@ -313,13 +313,8 @@ document.addEventListener('DOMContentLoaded', function() {
             9: 9,
             10: 6
         };
-        // function calculatePercentageScores(scores) {
-        //     return Object.keys(scores).map(key => {
-        //         const obtained = scores[key];
-        //         const full = categoryFullScores[key];
-        //         return (obtained / full) * 100;
-        //     });
-        // }
+       
+        // Calculate the percentage of category score in relation with full score
         function calculatePercentageScores(scores) {
             const percentageScores = [];
             for (let i = 0; i < 10; i++) {
@@ -332,7 +327,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return percentageScores;
         }
 
-        // Calculate average category scores
+        // Initialize all variables to 0
         const categorySums = {};
         const categoryCounts = {};
         for (let i = 1; i <= 10; i++) {
@@ -340,6 +335,7 @@ document.addEventListener('DOMContentLoaded', function() {
             categoryCounts[i] = 0;
         }
 
+        // Calculate sum of category scores and count the occurance
         filteredData.forEach(item => {
             for (let i = 1; i <= 10; i++) {
                 if (item.categories[i] !== undefined || item.categories[i]!=='N/A' || item.categories[i] !== null) {
@@ -348,12 +344,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         });
+
+        // Calculate average category score
         const averageCategoryScores = [];
         for (let i = 1; i <= 10; i++) {
             averageCategoryScores.push(categoryCounts[i] ? (categorySums[i] / categoryCounts[i]).toFixed(2) : 0);
         }
-        console.log(averageCategoryScores);
-        console.log(calculatePercentageScores(averageCategoryScores));
+        
+
         // Render radar chart
         if (categoriesChart) {
             categoriesChart.destroy();
@@ -372,6 +370,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 }]
             },
             options: {
+                responsive: true, // Ensure the chart resizes with the screen
+                maintainAspectRatio: false, // Allow the chart to adjust its aspect ratio
                 scales: {
                     r: {
                         angleLines: {
@@ -418,6 +418,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 }]
             },
             options: {
+                responsive: true, // Ensure the chart resizes with the screen
+                maintainAspectRatio: false, // Allow the chart to adjust its aspect ratio
                 scales: {
                     y: {
                         beginAtZero: true

@@ -177,4 +177,9 @@ fieldset{
 a:hover{
 	color: #fff;
 }
+/* Ensure the canvas fills the container */
+canvas {
+	width: 100% !important;
+	height: 100% !important;
+}
 /****************Fonts***************/

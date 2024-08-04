@@ -74,6 +74,11 @@
             background-color: grey;
             color: dark-grey;
         }
+        /* Ensure the canvas fills the container */
+        canvas {
+            width: 100% !important;
+            height: 100% !important;
+        }
     </style>
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
