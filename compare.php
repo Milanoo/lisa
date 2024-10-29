@@ -313,11 +313,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 const score1 = lgData1.categories[label];
                 const score2 = lgData2.categories[label];
 
-                const arrow1 = score1 > score2 ? '🡩' : score1 < score2 ? '🡫' : '';
+                const arrow1 = score1 > score2 ? '↑' : score1 < score2 ? '↓' : '';
                 const bg1 = score1 > score2 ? '#e6f4ea' : score1 < score2 ? '#fce8e6' : 'none';
                 const cl1 = score1 > score2 ? '#137333' : score1 < score2 ? '#a50e0e' : 'grey';
                 
-                const arrow2 = score2 > score1 ? '🡩' : score2 < score1 ? '🡫' : '';
+                const arrow2 = score2 > score1 ? '↑' : score2 < score1 ? '↓' : '';
                 const bg2 = score2 > score1 ? '#e6f4ea' : score2 < score1 ? '#fce8e6' : 'none';
                 const cl2 = score2 > score1 ? '#137333' : score2 < score1 ? '#a50e0e' : 'grey';
 
