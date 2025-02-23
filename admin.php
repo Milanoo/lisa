@@ -22,7 +22,7 @@
                     </thead>
                     <tbody>
                         <?php
-                        $fiscal_years = [1 => 'FY 2076/77', 2 => 'FY 2077/78', 3 => 'FY 2078/79', 4 => 'FY 2079/80']; // Example fiscal years
+                        $fiscal_years = [1 => 'FY 2076/77', 2 => 'FY 2077/78', 3 => 'FY 2078/79', 4 => 'FY 2079/80', 6 => 'FY 2080/81']; // Example fiscal years
                         $data_files = [];
                         foreach ($fiscal_years as $id => $year) {
                             $file_path = __DIR__ . "/data/LISA_summary_fiscal_year_{$id}.json";
