@@ -3,7 +3,18 @@
 
 ### Project Description
 
-This project is built to retrieve and analyze data from the LISA (Local Government Institution Capacity Self Assessment) system, offered by the Ministry of Federal Affairs and General Administration of Nepal. The data, obtained via the API https://lisa.mofaga.gov.np/backend/api/reports/summary?fiscal_year_id={index starting at 1}, is utilized to generate comparative reports and visualizations of local government performance over multiple fiscal years. To reduce API calls and prevent server overload, all API responses are stored as JSON files, enhancing data analysis efficiency and providing a responsive user interface. Also there is the option to retrieve data of individual LG with detail score of each indicator with category mapping: https://lisa.mofaga.gov.np/backend/api/answers?fiscal_year_id={index starting at 1}&gnid={ LG ID}
+This project is built to retrieve and analyze data from the LISA (Local Government Institution Capacity Self Assessment) system, offered by the Ministry of Federal Affairs and General Administration of Nepal. The data, obtained via the API https://lisa.mofaga.gov.np/backend/api/reports/summary?fiscal_year_id={index_starting_at_1}, is utilized to generate comparative reports and visualizations of local government performance over multiple fiscal years. To reduce API calls and prevent server overload, all API responses are stored as JSON files, enhancing data analysis efficiency and providing a responsive user interface. Also there is the option to retrieve data of individual LG with detail score of each indicator with category mapping: https://lisa.mofaga.gov.np/backend/api/answers?fiscal_year_id={index_starting_at_1}&gnid={LG_ID}.
+This Fiscal ID was mapped in this sequence as per the recent API request:
+
+```sh
+$fiscal_years = [
+        1 => 'FY 2076/77', 
+        2 => 'FY 2077/78', 
+        3 => 'FY 2078/79', 
+        4 => 'FY 2079/80',
+        6 => 'FY 2080/81'
+    ]; 
+```
 
 ### Key Features
 
