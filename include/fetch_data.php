@@ -11,7 +11,7 @@ function fetchData($fiscalYear) {
 }
 
 function saveData($fiscalYear, $data) {
-    $filePath = __DIR__ . "/data/LISA_summary_fiscal_year_{$fiscalYear}.json";
+    $filePath = dirname(__DIR__) . "/data/LISA_summary_fiscal_year_{$fiscalYear}.json";
     file_put_contents($filePath, $data);
 }
 
@@ -25,7 +25,7 @@ if (isset($_GET['fetch_data']) && $_GET['fetch_data'] === '1') {
 
     $response = [];
     foreach ($fiscal_years as $fiscalYear => $yearName) {
-        $file_path = __DIR__ . "/data/LISA_summary_fiscal_year_{$fiscalYear}.json";
+        $file_path = dirname(__DIR__) . "/data/LISA_summary_fiscal_year_{$fiscalYear}.json";
         if (file_exists($file_path)) {
             $file_size = filesize($file_path);
             $updated_at = date("Y-m-d H:i:s", filemtime($file_path));

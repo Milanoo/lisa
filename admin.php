@@ -1,7 +1,7 @@
-<?php include('top.php') ?>
+<?php include('include/top.php') ?>
 <body>
     <div id="wrapper" style="width:100%">
-        <?php include('sidebar.php') ?>
+        <?php include('include/sidebar.php') ?>
         <div id="content-wrapper" class="d-flex flex-column">
             <div class="content">
                 <h3 class="h3 mb-0 text-gray-800">Update Fiscal Year Data</h3>
@@ -61,7 +61,7 @@
 <script>
         $(document).ready(function() {
             $('#fetchDataBtn').click(function() {
-                $.get('fetch_data.php?fetch_data=1', function(data) {
+                $.get('include/fetch_data.php?fetch_data=1', function(data) {
                     $('#result').text('Data fetched and saved successfully.');
                     updateTable(JSON.parse(data));
                 }).fail(function() {
@@ -71,7 +71,7 @@
 
             $(document).on('click', '.update-btn', function() {
                 const fiscalYearId = $(this).data('id');
-                $.get(`fetch_data.php?fetch_data=1&fiscal_year_id=${fiscalYearId}`, function(data) {
+                $.get(`include/fetch_data.php?fetch_data=1&fiscal_year_id=${fiscalYearId}`, function(data) {
                     $('#result').text('Data fetched and saved successfully.');
                     updateTable(JSON.parse(data));
                 }).fail(function() {

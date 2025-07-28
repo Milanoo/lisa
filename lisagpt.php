@@ -1,7 +1,7 @@
-<?php include('top.php') ?>
+<?php include('include/top.php') ?>
 <body>
     <div id="wrapper" style="width:100%">
-        <?php include('sidebar.php') ?>
+        <?php include('include/sidebar.php') ?>
         <div id="content-wrapper">
             <div class="content">
                 <div class="container-fluid">
