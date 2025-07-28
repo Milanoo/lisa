@@ -60,7 +60,7 @@
                                 <select id="province" name="province" class="form-select">
                                     <option value="">All Provinces</option>
                                     <?php foreach ($provinces as $province): ?>
-                                        <option value="<?php echo $province; ?>" <?php if ($province == 'लुम्बिनी प्रदेश') echo 'selected'; ?>><?php echo $province; ?></option>
+                                        <option value="<?php echo $province; ?>" <?php if ($province == 'गण्डकी प्रदेश') echo 'selected'; ?>><?php echo $province; ?></option>
                                     <?php endforeach; ?>
                                 </select>
                             </div>

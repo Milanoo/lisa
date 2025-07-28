@@ -1,7 +1,7 @@
 <?php include('top.php') ?>
 <?php
     // Set the default fiscal year
-    $fiscal_year_id = isset($_GET['fiscal_year_id']) ? $_GET['fiscal_year_id'] : 4;
+    $fiscal_year_id = isset($_GET['fiscal_year_id']) ? $_GET['fiscal_year_id'] : 6;
     
     // Define the file path based on the fiscal year
     $file_path = __DIR__ . "/data/LISA_summary_fiscal_year_{$fiscal_year_id}.json";
@@ -44,7 +44,7 @@
                         <div class="col-xl-3 col-md-6 mb-4">
                             <select id="provinceSelect" class="form-select">
                                 <?php foreach ($provinces as $province): ?>
-                                    <option value="<?php echo $province; ?>" <?php if ($province == 'लुम्बिनी प्रदेश') echo 'selected'; ?>><?php echo $province; ?></option>
+                                    <option value="<?php echo $province; ?>" <?php if ($province == 'गण्डकी प्रदेश') echo 'selected'; ?>><?php echo $province; ?></option>
                                 <?php endforeach; ?>
                             </select>
                         </div>
